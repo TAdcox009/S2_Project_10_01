@@ -7,10 +7,10 @@
       Case Problem 1
 
       JFK Inaugural Page
-      Author: 
-      Date:   
+      Author: Todd Adcox jr
+      Date:   1/29/19
 
-      Filename:   ws_jfk.html
+      Filename:   index.html
 
    -->
    
@@ -19,6 +19,7 @@
    <title>Rhetoric in the United States: JFK Inaugural Address (1961)</title>
    <link href="ws_base.css" rel="stylesheet" />
    <link href="ws_styles.css" rel="stylesheet" />
+   <link rel="stylesheet" href="ws_media.css" />
    
 </head>
 
@@ -41,7 +42,17 @@
 
    <section>   
       <article>
-         <h1>John F. Kennedy Inaugural Address</h1>      
+         <h1>John F. Kennedy Inaugural Address</h1> 
+
+         <!--A video clip with controls such as pause and play, displaying a poster image or thumbnail so the user sees a certain image instead of a random part from the video ws_jfk_poster.png file. Add two possible sources to the video clip: ws_jfk_speech.mp4 and ws_jfk_speech.webm, including the mime-type for each video source. -->
+         <video controls poster="ws_jfk_poster.png">
+            <source src=" ws_jfk_speech.mp4" type="video/mp4" />
+            <source src=" ws_jfk_speech.webm" type="video/webm" />
+
+            <!--A track with the label speech captions linked to the vtt file which has captions for the video, if the browser does not support embedded video it will display the paragraph "to play this video clip, your browser needs to support HtML5."" -->
+            <track src="ws_captions.vtt" kind="captions" label="Speech Captions" default />
+            <p><em>To play this vidio clip your browser needs to support HTML5.</em></p>
+         </video>     
          <p>Vice President Johnson, Mr. Speaker, Mr. Chief Justice, President Eisenhower, 
             Vice President Nixon, President Truman, reverend clergy, fellow citizens:
          </p>

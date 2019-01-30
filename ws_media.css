@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+  Author: Todd Adcox jr
+   Date:   1/29/19 
+
+   Filename: ws_media.css
+
+*/
+
+
+
+/* VideoPlayer Styles */
+
+/* Displays video elements as blocks, has a width of 90% and 5 pixels of margin space on the top and bottoem and the left/right margins to auto. */
+video {
+   display: block;
+   width: 90%;
+   margin: 5px auto 5px auto;
+}
+
+/* A media query for screen devices with a minimum width of 521 pixels. Style furles to affect the video elements that sets the width of the player to 360 pixels, floated on the right margin with a margin width of 10 pixels. */
+@media only screen and (min-width: 521px) {
+
+   video {
+       width: 360px;
+       float: right;
+       margin: 10px;
+   }
+}
+
+/* Track Styles */
+
+/*For caption cues, displays the text in a 1.3em sans-serif font with a text color of rgb(221, 128, 160), and a background color of rgba(255, 255, 255, 0.8). */
+::cue {
+   font: 1.3em sans-serif;
+   color: rgb(221, 128, 160);
+   background-color: rgba(255, 255, 255, 0.8);
+}
